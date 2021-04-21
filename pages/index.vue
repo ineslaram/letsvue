@@ -1,38 +1,21 @@
 <template>
-  <div class="container">
-    <div>
+  <div>
+    <Hero></Hero>
+    <div class="flex flex-col mx-40">
       <JobItem v-for="job in jobs" :key="job.id" :item="job"></JobItem>
-
-      <h1 class="title">letsvue</h1>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--green"
-        >
-          Documentation
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--grey"
-        >
-          GitHub
-        </a>
-      </div>
     </div>
   </div>
 </template>
 
 <script>
 import JobsServices from '@/services/JobsService'
-import JobItem from '@/components/JobItem'
+import JobItem from '@/components/jobs/JobItem'
+import Hero from '@/components/home/Hero'
 export default {
   name: 'Home',
   components: {
     JobItem,
+    Hero,
   },
   data: () => ({
     jobs: null,
