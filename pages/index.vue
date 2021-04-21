@@ -1,7 +1,8 @@
 <template>
   <div class="container">
     <div>
-      <Logo />
+      <JobItem v-for="job in jobs" :key="job.id" :item="job"></JobItem>
+
       <h1 class="title">letsvue</h1>
       <div class="links">
         <a
@@ -26,7 +27,25 @@
 </template>
 
 <script>
-export default {}
+import JobsServices from '@/services/JobsService'
+import JobItem from '@/components/JobItem'
+export default {
+  name: 'Home',
+  components: {
+    JobItem,
+  },
+  data: () => ({
+    jobs: null,
+  }),
+  mounted() {
+    this.loadData()
+  },
+  methods: {
+    async loadData() {
+      this.jobs = await JobsServices.getJobs()
+    },
+  },
+}
 </script>
 
 <style>
