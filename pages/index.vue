@@ -1,7 +1,7 @@
 <template>
   <div>
     <Hero></Hero>
-    <div class="flex flex-col mx-40">
+    <div class="flex flex-col mx-10 md:mx-20 sm:mx-10 lg:mx-40">
       <JobItem v-for="job in jobs" :key="job.id" :item="job"></JobItem>
     </div>
   </div>
