@@ -5,9 +5,7 @@
         class="relative flex items-center justify-between sm:h-10 lg:justify-start"
         aria-label="Global"
       >
-        <div
-          class="flex items-center flex-grow flex-shrink-0 lg:flex-grow-0 py-20"
-        >
+        <div class="flex items-center flex-grow flex-shrink-0 lg:flex-grow-0">
           <div class="flex items-center justify-between w-full md:w-auto">
             <a href="#">
               <span class="sr-only">Workflow</span>
@@ -45,14 +43,14 @@
         </div>
         <div class="hidden md:block md:ml-10 md:pr-4 md:space-x-8">
           <a href="#" class="font-medium text-gray-500 hover:text-gray-900"
-            >Product</a
+            >Recursos</a
           >
 
           <a href="#" class="font-medium text-gray-500 hover:text-gray-900"
-            >Features</a
+            >Contacto</a
           >
 
-          <a href="#" class="font-medium text-gray-500 hover:text-gray-900"
+          <!-- <a href="#" class="font-medium text-gray-500 hover:text-gray-900"
             >Marketplace</a
           >
 
@@ -62,13 +60,13 @@
 
           <a href="#" class="font-medium text-indigo-600 hover:text-indigo-500"
             >Log in</a
-          >
+          > -->
         </div>
       </nav>
     </div>
     <div class="sm:text-center lg:text-center mt-14">
       <h1
-        class="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl"
+        class="text-4xl tracking-tight font-extrabold text-gray-900 sm:text-5xl md:text-6xl flex flex-col items-center"
       >
         <span class="block">Encuentra los mejores</span>
         <span class="block text-indigo-600">empleos con Vue.js</span>
