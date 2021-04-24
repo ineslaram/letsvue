@@ -19,24 +19,14 @@ export default {
       console.error(error)
     }
   },
-  async getProject(id) {
-    return await axios.get(`${process.env.BASE_URL}${id}`)
+  async getJob(id) {
+    try {
+      const response = await axios.get(`${process.env.BASE_URL}/${id}`, {
+        headers: { Authorization: 'Bearer ' + process.env.AIRTABLE_API_KEY },
+      })
+      return response.data
+    } catch (error) {
+      console.log(error)
+    }
   },
 }
-
-// export default {
-//   async getJobs() {
-//     this.items = []
-//     await axios
-//       .get(API_ROUTES.ALL_PLANTS, {
-//         headers: { Authorization: 'Bearer ' + process.env.AIRTABLE_API_KEY },
-//       })
-//       .then((response) => {
-//         // load the API response into items for datatable
-//         this.items = response.data.records
-//       })
-//       .catch((error) => {
-//         console.log(error)
-//       })
-//   },
-// }
