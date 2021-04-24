@@ -7,12 +7,9 @@
       >
         <div class="flex items-center flex-grow flex-shrink-0 lg:flex-grow-0">
           <div class="flex items-center justify-between w-full md:w-auto">
-            <a href="#">
+            <a href="/">
               <span class="sr-only">Workflow</span>
-              <img
-                class="h-8 w-auto sm:h-10"
-                src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"
-              />
+              <img class="h-8 w-auto sm:h-10" src="/images/letsvue.svg" />
             </a>
             <div class="-mr-2 flex items-center md:hidden">
               <button
@@ -21,7 +18,6 @@
                 aria-expanded="false"
               >
                 <span class="sr-only">Open main menu</span>
-                <!-- Heroicon name: outline/menu -->
                 <svg
                   class="h-6 w-6"
                   xmlns="http://www.w3.org/2000/svg"
