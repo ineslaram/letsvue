@@ -20,7 +20,9 @@ export default {
   },
   methods: {
     async loadData() {
-      this.job = await JobsServices.getJob(this.$route.params.id)
+      const data = await JobsServices.getJob(this.$route.params.id)
+      this.job = data.fields
+      console.log(this.job)
     },
   },
 }

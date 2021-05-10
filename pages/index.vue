@@ -11,6 +11,7 @@
 import JobsServices from '@/services/JobsService'
 import JobItem from '@/components/jobs/JobItem'
 import Hero from '@/components/home/Hero'
+
 export default {
   name: 'Home',
   components: {
