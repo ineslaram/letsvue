@@ -64,9 +64,7 @@ export default {
       return `Publicado hace ${this.job.created}`
     },
     remote() {
-      return this.job.remote === 'Remote'
-        ? 'Posibilidad de remoto'
-        : 'Presencial'
+      return this.job.remote === 'Remoto' ? 'Remoto' : 'Presencial'
     },
     jobExperience() {
       return this.job.experience
@@ -108,6 +106,7 @@ export default {
     justify-content: center;
     align-items: center;
     height: 100%;
+
     &__title {
       color: white;
       font-size: 30px;
@@ -117,6 +116,7 @@ export default {
     }
   }
 }
+
 .job-description-title {
   font-weight: bold;
   font-size: 20px;
